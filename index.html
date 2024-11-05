@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pendaftaran Peserta Lomba Olahraga</title>
+    <style>
+        /* CSS dasar untuk flexbox */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            width: 100%;
+            padding: 20px;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        article {
+            flex: 2;
+            background-color: #e9ecef;
+            padding: 20px;
+        }
+        aside {
+            flex: 1;
+            background-color: #dee2e6;
+            padding: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Website Pendaftaran Lomba Olahraga</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Form Pendaftaran Peserta</h2>
+            <p>Silakan isi formulir di bawah ini untuk mendaftar sebagai peserta lomba olahraga.</p>
+            <form action="proses_pendaftaran.html" method="POST">
+                <label for="nama">Nama Lengkap:</label><br>
+                <input type="text" id="nama" name="nama" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telp">Nomor Telepon:</label><br>
+                <input type="tel" id="telp" name="telp" required><br><br>
+                <label for="cabang">Cabang Olahraga:</label><br>
+                <select id="cabang" name="cabang" required>
+                    <option value="sepakbola">Sepak Bola</option>
+                    <option value="basket">Basket</option>
+                    <option value="voli">Voli</option>
+                </select><br><br>
+                <input type="submit" value="Daftar">
+            </form>
+        </article>
+
+        <aside>
+            <h2>Biodata Peserta</h2>
+            <img src="images/foto-peserta.jpeg.jpeg" alt="Foto Peserta" width="200">
+            <p>Nama  : KAIRI</p>
+            <p>Umur  : 22 Tahun</p>
+            <p>Alamat: jakarta</p>
+            <p>Cabang Olahraga: Sepak Bola</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pendaftaran Lomba Olahraga</p>
+    </footer>
+
+</body>
+</html>
